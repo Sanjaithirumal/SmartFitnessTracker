@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.controllers.DashboardController">
+    <Label text="Smart Fitness Tracker" style="-fx-font-size: 24px;"/>
+    <Label text="Total Calories Burned:"/>
+    <Label fx:id="totalCaloriesBurned"/>
+    <Label text="Total Calories Intake:"/>
+    <Label fx:id="totalCaloriesIntake"/>
+    
+    <LineChart fx:id="progressChart">
+        <xAxis>
+            <CategoryAxis label="Days"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Calories"/>
+        </yAxis>
+    </LineChart>
+</VBox>
